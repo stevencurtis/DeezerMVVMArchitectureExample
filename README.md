@@ -11,7 +11,7 @@ Download the files either from the command line, or download from GitHub's green
 
 ## Architecture
 Note this architecture does not use [two-way bindings](https://stevenpcurtis.medium.com/implement-two-way-uikit-binding-in-vanilla-swift-5261d15c918) as the focus here is on Interactors and Repositories.<br>
-![Architecture](Images/arch.png)<br/>
+![Architecture](Images/architecture.png)<br/>
 
 ## Limitations
 This App is intended to be an example of the architecture rather than a production ready music application.
