@@ -15,12 +15,13 @@ protocol SearchRespositoryProtocol {
 
 final class SearchRespository {
     private let apiService: SearchApiServiceProtocol
-
+    
     init(
         apiService: SearchApiServiceProtocol = SearchApiService()
     ) {
         self.apiService = apiService
-    }}
+    }    
+}
 
 extension SearchRespository: SearchRespositoryProtocol {
     func getSearchAlbum(query: String, completion: @escaping (Result<[AlbumSearch], Error>) -> Void) {

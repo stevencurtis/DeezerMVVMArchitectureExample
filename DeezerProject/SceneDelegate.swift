@@ -44,7 +44,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         searchNavigationController.tabBarItem.title = "Search"
 
         searchFlow = SearchFlow(
-            router: FlowRoutingService(navigationController: searchNavigationController, tabController: tabBar)
+            router: FlowRoutingService(
+                navigationController: searchNavigationController,
+                tabController: tabBar
+            )
         )
 
         tabBar.addChild(searchNavigationController)

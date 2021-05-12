@@ -50,8 +50,8 @@ final class DataManager: DataManagerProtocol {
 
     func save(favourite: TrackApiDto, completion: (() -> Void)? = nil) {
         managedObjectContext.perform {
-            let test = DBTrackStorage(entity: self.entity, insertInto: self.managedObjectContext)
-            test.update(from: favourite)
+            let object = DBTrackStorage(entity: self.entity, insertInto: self.managedObjectContext)
+            object.update(from: favourite)
             self.saveContext(completion: completion ?? {})
         }
     }
