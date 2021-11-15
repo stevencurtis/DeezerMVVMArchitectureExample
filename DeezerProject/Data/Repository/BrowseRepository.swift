@@ -149,7 +149,7 @@ extension BrowseRepository: BrowseRepositoryProtocol {
             case .failure(let error):
                 completion(.failure(error))
             }
-        })
+        }
+        )
     }
-
 }

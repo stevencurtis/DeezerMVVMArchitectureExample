@@ -38,7 +38,6 @@ class SearchViewController: UIViewController {
                         self.viewModel.showAlbums(with: album)
                     default: break
                     }
-
                 },
                 onFavouriteTap: nil
             )

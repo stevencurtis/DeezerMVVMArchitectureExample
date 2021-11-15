@@ -97,5 +97,4 @@ extension AlbumViewController: UITableViewDataSource {
         }
         fatalError("Unable to dequeue cell")
     }
-
 }

@@ -65,5 +65,4 @@ extension FlowRunner: FlowRunnerProtocol {
             router: router
         ).runFlow(with: artist)
     }
-
 }

@@ -56,6 +56,8 @@ extension SearchFlow: SearchFlowProtocol {
     }
 
     func showAlbum(album: AlbumSearch) {
-        router.showPushed(screenFactory.makeAlbumScreen(flow: self, album: album))
+        router.showPushed(
+            screenFactory.makeAlbumScreen(flow: self, album: album)
+        )
     }
 }

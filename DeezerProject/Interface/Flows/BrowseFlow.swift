@@ -42,6 +42,7 @@ extension BrowseFlow: BrowseFlowProtocol {
     func showArtistScreen(artist: ArtistSearch) {
         flowRunner.runArtistFlow(router: router, artist: artist)
     }
+    
     func showTrackScreen(track: Track, image: String? = nil) {
         flowRunner.runTrackFlow(router: router, track: track, image: image)
     }

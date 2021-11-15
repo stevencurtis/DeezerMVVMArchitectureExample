@@ -116,7 +116,7 @@ extension BrowseApiService: BrowseApiServiceProtocol {
                 if let res = try? result.get() {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    if let decoded = try? decoder.decode(WrappedData<[TrackApiDto]>.self, from: res) { //TrackSearch
+                    if let decoded = try? decoder.decode(WrappedData<[TrackApiDto]>.self, from: res) {
                         completion(.success(.init(), decoded.data))
                         return
                     }

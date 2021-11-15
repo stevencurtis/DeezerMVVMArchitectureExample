@@ -97,5 +97,4 @@ extension ArtistViewController: UITableViewDataSource {
         }
         fatalError("Unable to dequeue cell")
     }
-
 }

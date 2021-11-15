@@ -100,7 +100,6 @@ extension GenreListViewController {
                     with: genre.name,
                     pictureURLString: genre.pictureMedium,
                     onTap: {
-                        print("onTap \(indexPath.row)")
                         let genre = self.viewModel.genreData[indexPath.row]
                         switch genre {
                         case .genre(let genre):

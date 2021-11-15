@@ -14,6 +14,7 @@ protocol GenreViewModelProtocol {
     var reloadCollectionView: (() -> Void)? { get set }
     func showArtist(artist: ArtistSearch)
 }
+
 class GenreViewModel: GenreViewModelProtocol {
     public enum Section: CaseIterable, Hashable {
         case grid

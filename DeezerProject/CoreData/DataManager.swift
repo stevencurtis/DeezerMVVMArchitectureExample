@@ -31,7 +31,8 @@ final class DataManager: DataManagerProtocol {
 
         if let entityDescription = NSEntityDescription.entity(
             forEntityName: Constants.entityName,
-            in: managedObjectContext) {
+            in: managedObjectContext
+        ) {
             entity = entityDescription
         }
     }

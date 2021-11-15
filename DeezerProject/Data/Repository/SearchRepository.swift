@@ -42,7 +42,8 @@ extension SearchRespository: SearchRespositoryProtocol {
             case .failure(let error):
                 completion(.failure(error))
             }
-        })
+        }
+        )
     }
     func getSearchTrack(query: String, completion: @escaping (Result<[Track], Error>) -> Void) {
         apiService.searchTrack(query: query, completion: { apiResponse in
@@ -52,6 +53,7 @@ extension SearchRespository: SearchRespositoryProtocol {
             case .failure(let error):
                 completion(.failure(error))
             }
-        })
+        }
+        )
     }
 }
