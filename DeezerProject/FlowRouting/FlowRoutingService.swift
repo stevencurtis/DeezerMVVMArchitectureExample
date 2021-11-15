@@ -84,6 +84,7 @@ extension FlowRoutingService: FlowRoutingServiceProtocol {
                 navigationController.pushViewController(controller, animated: false)
         }
     }
+    
     public func clearLastAndShowPushed(_ controller: UIViewController) {
         let navigationController: UINavigationController? = {
             if let visibleViewController = self.navigationController.visibleViewController {

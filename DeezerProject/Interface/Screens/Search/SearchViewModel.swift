@@ -75,7 +75,8 @@ class SearchViewModel: NSObject, SearchViewModelProtocol {
             case .failure:
                 break
             }
-        })
+        }
+        )
     }
 
     @objc func getSearchResults(with query: String) {
@@ -97,17 +98,7 @@ class SearchViewModel: NSObject, SearchViewModelProtocol {
                     self.reloadCollectionView?()
                 }
             }
-        })
-    }
-
-    func searchAlbum() {
-        searchInteractor.getSearchArtist(query: "taylor", completion: { res in
-            switch res {
-            case .success(let albums):
-                print(albums)
-            case .failure(let error):
-                print(error)
-            }
-        })
+        }
+        )
     }
 }

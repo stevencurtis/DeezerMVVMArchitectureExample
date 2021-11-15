@@ -46,6 +46,7 @@ extension SearchApiService: SearchApiServiceProtocol {
             }
         )
     }
+    
     func searchArtist(query: String, completion: @escaping (ApiResponse<[ArtistSearchApiDto]>) -> Void) {
         anyNetworkManager?.fetch(
             url: URL(string: "https://api.deezer.com/search/artist?q=\(query)")!,
@@ -63,6 +64,7 @@ extension SearchApiService: SearchApiServiceProtocol {
             }
         )
     }
+    
     func searchTrack(query: String, completion: @escaping (ApiResponse<[TrackApiDto]>) -> Void) {
         anyNetworkManager?.fetch(
             url: URL(string: "https://api.deezer.com/search/track?q=\(query)")!,

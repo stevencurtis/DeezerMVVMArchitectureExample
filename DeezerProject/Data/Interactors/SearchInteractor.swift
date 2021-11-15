@@ -77,7 +77,7 @@ extension SearchInteractor: SearchInteractorProtocol {
         searchRepository.getSearchAlbum(query: query, completion: completion)
     }
 
-    func getSearchTrack(query: String, completion: @escaping (Result<[Track], Error>) -> Void) { // Track
+    func getSearchTrack(query: String, completion: @escaping (Result<[Track], Error>) -> Void) {
         searchRepository.getSearchTrack(query: query, completion: completion)
     }
 

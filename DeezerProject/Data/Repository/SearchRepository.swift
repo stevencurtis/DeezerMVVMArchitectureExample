@@ -32,8 +32,10 @@ extension SearchRespository: SearchRespositoryProtocol {
             case .failure(let error):
                 completion(.failure(error))
             }
-        })
+        }
+        )
     }
+    
     func getSearchArtist(query: String, completion: @escaping (Result<[ArtistSearch], Error>) -> Void) {
         apiService.searchArtist(query: query, completion: { apiResponse in
             switch apiResponse.result {
@@ -45,6 +47,7 @@ extension SearchRespository: SearchRespositoryProtocol {
         }
         )
     }
+    
     func getSearchTrack(query: String, completion: @escaping (Result<[Track], Error>) -> Void) {
         apiService.searchTrack(query: query, completion: { apiResponse in
             switch apiResponse.result {
