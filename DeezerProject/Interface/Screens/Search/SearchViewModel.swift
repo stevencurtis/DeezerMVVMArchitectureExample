@@ -61,7 +61,7 @@ class SearchViewModel: NSObject, SearchViewModelProtocol {
 
     func makeSearch(with term: String) {
         NSObject.cancelPreviousPerformRequests(withTarget: self)
-        self.perform(#selector(getSearchResults(with:)), with: term, afterDelay: TimeInterval(1.0))
+        perform(#selector(getSearchResults(with:)), with: term, afterDelay: TimeInterval(1.0))
     }
 
     @objc private func searchAlbums(term: String) {

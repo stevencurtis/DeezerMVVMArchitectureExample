@@ -246,7 +246,7 @@ extension SearchViewController {
 extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         deleteAllItems()
-        self.viewModel.makeSearch(with: searchText)
+        viewModel.makeSearch(with: searchText)
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         deleteAllItems()
