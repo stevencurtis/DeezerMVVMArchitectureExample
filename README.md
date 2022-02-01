@@ -1,6 +1,6 @@
 # A Music App using the DeezerAPI
 
-This is an example application that uses the DeezerAPI, in order to show a MVVM architecture.
+This is an example application that uses the DeezerAPI, in order to show an MVVM architecture.
 
 ![Video](Images/vid.gif)<br/>
 
